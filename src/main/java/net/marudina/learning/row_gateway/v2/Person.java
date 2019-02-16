@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Person {
+	
 	private final int id;
 	private String lastName;
 	private String firstName;

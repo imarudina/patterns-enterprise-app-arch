@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Person {
+	
 	private final int id;
 	private String lastName;
 	private String firstName;
