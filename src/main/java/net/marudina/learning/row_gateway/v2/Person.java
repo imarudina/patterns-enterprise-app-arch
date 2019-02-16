@@ -42,17 +42,6 @@ public class Person {
 		this.age = age;
 	}
 
-	public void update(final Connection conn) throws SQLException {
-		PreparedStatement ps = conn.prepareStatement("UPDATE PEOPLE SET LASTNAME=?,FIRSTNAME=?,AGE=? WHERE ID=?");
-
-		ps.setString(1, lastName);
-		ps.setString(2, firstName);
-		ps.setInt(3, age);
-		ps.setInt(4, id);
-
-		ps.executeUpdate();
-	}
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -64,6 +53,17 @@ public class Person {
 		sb.append("}");
 
 		return sb.toString();
+	}
+
+	public void update(final Connection conn) throws SQLException {
+		PreparedStatement ps = conn.prepareStatement("UPDATE PEOPLE SET LASTNAME=?,FIRSTNAME=?,AGE=? WHERE ID=?");
+
+		ps.setString(1, lastName);
+		ps.setString(2, firstName);
+		ps.setInt(3, age);
+		ps.setInt(4, id);
+
+		ps.executeUpdate();
 	}
 
 	public void insert(final Connection conn) throws SQLException {
