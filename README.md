@@ -1,0 +1,1 @@
+Implementation of some patterns from the book "Patterns of Enterprise Application Architecture" by Martin Fowler
