@@ -6,4 +6,4 @@ The database is an H2 file, contained in the db folder.
 
 TODO:
 - table rename (PEOPLE -> PERSON)
-- move CRUD deoms in unit tests
+- move CRUD demos in unit tests
